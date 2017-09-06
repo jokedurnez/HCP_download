@@ -16,7 +16,7 @@ The script runs in python 2.7 and requires the following dependencies:
 #### HCP S3 credentials
 To use this script, you need to create HCP credentials.  You'll need to accept the terms of data usage as well.  You can do so by following (the beginning of) this tutorial: https://wiki.humanconnectome.org/display/PublicData/How+To+Connect+to+Connectome+Data+via+AWS).
 
-Once you have generated your credentials, create or append the following to `~/.aws.credentials`:
+Once you have generated your credentials, create or append the following to `~/.aws/credentials`:
 ```
 [hcp]
 AWS_ACCESS_KEY_ID=XXXXXXXXX
