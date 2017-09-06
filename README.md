@@ -4,7 +4,7 @@ This is a script to download the HCP-1200 subjects release.  For more informatio
 
 [//]: # (I have written this script for personal use, but maybe other people can use it.  I don't provide support, nor am I related to the team collecting and processing the data.)
 
-It's definitely suboptimal, so in case someone wants to make it better, feel free :-)
+It's definitely suboptimal (as in: it's not very flexible), so in case someone wants to make it better, feel free :-)
 
 #### Using the script
 The script runs in python 2.7 and requires the following dependencies:
@@ -34,7 +34,7 @@ python download_HCP_1200.py --subject=996782 --out_dir=/data/output/
 ```
 
 #### Select modalities / data
-In an ugly but working attempt to only download a part of the data, you can comment out parts of line 20-29.
+In an ugly but working attempt to only download a part of the data, you can comment out parts of line 15-22.
 
 #### Create tarballs
 You probably won't need this, but because the cluster I'm using (Stanford's [sherlock](http://sherlock.stanford.edu/)) has a limit on the number of files per user, and the HCP data has **a HUGE** amount of files, I've put in an extra argument `tartasks` that will make tarballs with the coregistered and processed task data for each task.  For example:
