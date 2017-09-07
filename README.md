@@ -63,6 +63,6 @@ module load py-scipystack/1.0_py27
 
 SUBJECT=$(python utils/get_subject.py 2>&1)
 
-python download_HCP_1200.py --subject=$SUBJECT --out_dir=/oak/stanford/groups/russpold/data/HCP/data/ --tartasks
+python download_HCP_1200.py --subject=$SUBJECT --out_dir=/data/output/ --tartasks
 
 ```
